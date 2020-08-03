@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Arrow Functions</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Arrow Functions Exercise.</h1>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <p><em>Zero Arguments With Parenthesis: ()</em></p>
+                    <p>
+                        <code>
+                        const ten = () => 10
+                        </code>
+                    </p>
+                    <p id="parenthesis"></p>
+                    <hr>
+                </div>
+                <div class="col-md-6">
+                    <p><em>Zero Arguments Substitute Parenthesis () for Underscore _:</em></p>
+                    <p>
+                        <code>
+                            const twenty = _ => 20
+                        </code>
+                    </p>
+                    <p id="underscore"></p>
+                    <hr>
+                </div>
+                <div class="col-md-6">
+                    <p><em>We can remove the parenthesis with one arg</em></p>
+                    <p>
+                        <code>
+                            const logger = helloArg =>
+                            {
+                                return helloArg
+                            }
+                            <br>
+                            // usage
+                            <br>
+                            logger('Hello')
+                        </code>
+                    </p>
+                    <p id="oneArg"></p>
+                    <hr>
+                </div>
+                <div class="col-md-6">
+                    <p><em>One Arg with Parenthesis ()</em></p>
+                    <p>
+                        <code>
+                            const logger = ( helloArg ) =>
+                            {
+                                return helloArg
+                            }
+                            <br>
+                            // usage
+                            <br>
+                            logger('Hi Parenthesis')
+                        </code>
+                    </p>
+                    <p id="oneArgParenthesis"></p>
+                    <hr>
+                </div>
+                <div class="col-md-6">
+                    <p><em>2 or More Args can be replaced with the following syntax</em></p>
+                    <p>
+                        <code>
+                            const twoOrMoreArgsArrow = ( arg1, arg2 ) => return arg1 + arg2
+                        </code>
+                    </p>
+                    <p id="twoArgsArrow"></p>
+                    <hr>
+                </div>
+                <div class="col-md-6">
+                    <p><em>2 or More Args Must use basic arrow syntax function</em></p>
+                    <p>
+                        <code>
+                            const twoOrMoreArgs = ( arg1, arg2 ) =>
+                            {
+                                return arg1 + arg2
+                            }
+                        </code>
+                    </p>
+                    <p id="twoArgs"></p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="js/arrow-functions.js"></script>
+    </body>
+
+</html>
