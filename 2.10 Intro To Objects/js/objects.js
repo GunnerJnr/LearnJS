@@ -119,7 +119,7 @@ const anotherObject5 = {
 console.log( anotherObject5[ 'Hello World' ] )
 
 // Set the value of a property with the dot notation.
-anotherObject4.DeleteMe = 'Do not delete me know as I am no longer a crappy movie!'
+anotherObject4.DeleteMe = 'Do not delete me now as I am no longer a crappy movie!'
 // output to the console window
 console.log( anotherObject4.DeleteMe )
 
