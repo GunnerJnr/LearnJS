@@ -55,7 +55,7 @@ console.log( desktopPC )
 
 // delete a property
 delete iPhone11.case
-console.log(iPhone11)
+console.log( iPhone11 )
 
 // functions in objects examples
 function sayName () { }
@@ -66,7 +66,7 @@ console.log( sayName.property )
 const anotherObject3 = {
     aMethod: function ()
     {
-        console.log('I am a function in an Object, more commonly known as a Method!')
+        console.log( 'I am a function in an Object, more commonly known as a Method!' )
     }
 }
 anotherObject3.aMethod()
@@ -75,11 +75,11 @@ anotherObject3.aMethod()
 const gamingPC = {
     startStreaming: function ()
     {
-        console.log('Gaming PC: Streaming is live!')
+        console.log( 'Gaming PC: Streaming is live!' )
     },
     stopStreaming: function ()
     {
-        console.log('Gaming PC: Streaming is off air!')
+        console.log( 'Gaming PC: Streaming is off air!' )
     }
 }
 gamingPC.startStreaming() // dot notation
@@ -117,16 +117,16 @@ console.log( anotherObject4[ 'TVSeries' ] )
 const anObjectWithAMethod = {
     myMethod: function ()
     {
-        console.log('I am a method!')
+        console.log( 'I am a method!' )
     }
 }
 anObjectWithAMethod.myMethod()
 
 // Make a method that takes in an argument. Call this method.
 const anObjectWithAMethodAndAnArg = {
-    myMethodWithAnArg: function (arg)
+    myMethodWithAnArg: function ( arg )
     {
-        console.log(`I am a method with an argument! and my argument is: ${ arg }`)
+        console.log( `I am a method with an argument! and my argument is: ${ arg }` )
     }
 }
-anObjectWithAMethodAndAnArg.myMethodWithAnArg('Hello')
+anObjectWithAMethodAndAnArg.myMethodWithAnArg( 'Hello' )
