@@ -126,7 +126,7 @@ anObjectWithAMethod.myMethod()
 const anObjectWithAMethodAndAnArg = {
     myMethodWithAnArg: function (arg)
     {
-        console.log('I am a method with an argument! and my argument is:' + ' ' + arg)
+        console.log(`I am a method with an argument! and my argument is: ${ arg }`)
     }
 }
 anObjectWithAMethodAndAnArg.myMethodWithAnArg('Hello')
