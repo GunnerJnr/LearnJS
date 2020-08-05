@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selecting an Element</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <h1 class="text-center">Lesson 2.15 - Selecting an element</h1>
+            <hr>
+            <div class="row">
+                <div class="col border-right">
+                    <h2>Examples of querySelector</h2>
+                    <hr>
+                    <p>We can access an element by using:</p>
+                    <p>
+                        <code>document.querySelector</code>
+                    </p>
+                    <p>A more trivial usuage example would be:</p>
+                    <p>
+                        <code>const element = document.querySelector(selector)</code>
+                    </p>
+                </div>
+                <div class="col border-right">
+                    <h2>Examples of elementSelector</h2>
+                    <hr>
+                    <p>We can also target specific elements:</p>
+                    <p>
+                        <code>element.querySelector</code>
+                    </p>
+                    <hr>
+                    <div class="row">
+                        <div class="col border-right">
+                            <p>A more trivial usuage example would be, say we had a list of names:</p>
+                            <pre class="text-danger">
+    &lt;ul class="people"&gt;
+        &lt;li&gt;Dave&lt;/li&gt;
+        &lt;li&gt;Clare&lt;/li&gt;
+        &lt;li&gt;Cece&lt;/li&gt;
+        &lt;li&gt;Bex&lt;/li&gt;
+    &lt;/ul&gt;
+                    </pre>
+                        </div>
+                        <div class="col">
+                            <p>ouptut:</p>
+                            <code>
+                        <ul class="people">
+                           <li>Dave</li>
+                            <li>Clare</li>
+                            <li>Cece</li>
+                            <li>Bex</li>
+                        </ul>
+                    </code>
+                        </div>
+                    </div>
+                    <hr>
+                    <p>We could acces it by targeting:</p>
+                    <p>
+                        <code>const people = document.querySelector('.people')</code>
+                        <br>
+                        <code>const firstPerson = people.querySelector('li')</code>
+                        <br>
+                        <code>console.log(firstPerson) // outputs 'Dave'</code>
+                    </p>
+                </div>
+                <div class="col">
+                    <h2>Exercises & Solutions</h2>
+                    <hr>
+                    <ul id="star-wars-characters">
+                        <li class="character luke" data-type="hero">Luke Skywalker</li>
+                        <li class="character yoda" data-type="master">Yoda</li>
+                        <li class="character badboy" data-type="villain">Darth Vader</li>
+                    </ul>
+                    <hr>
+                    <p>
+                    <pre class="text-danger">
+    // Get the #star-wars-characters list with id selectors.
+    const getCharactersFromStartWarsListWithID = document.querySelector( '#star-wars-characters' )
+    console.log( getCharactersFromStartWarsListWithID )
+
+    // Get the #star-wars-characters list with tag selectors.
+    const getCharactersFromStartWarsListWithTAG = getCharactersFromStartWarsListWithID.querySelector( 'li' )
+    console.log( getCharactersFromStartWarsListWithTAG )
+
+    // Luke Skywalker with class selectors
+    const getLukeSkywalkerWithClass = getCharactersFromStartWarsListWithID.querySelector( '.luke' )
+    console.log( getLukeSkywalkerWithClass )
+
+    // Luke Skywalker with tag selectors
+    const getLukeSkywalkerWithTAG = getCharactersFromStartWarsListWithID.querySelector( 'li' )
+    console.log( getLukeSkywalkerWithTAG )
+
+    // Luke Skywalker with attribute selectors
+    const getLukeSkywalkerWithAttribute = getCharactersFromStartWarsListWithID.querySelector( '[data-type=hero]' )
+    console.log( getLukeSkywalkerWithAttribute )
+
+    // Yoda with class selectors
+    const getYodaWithClass = getCharactersFromStartWarsListWithID.querySelector( '.yoda' )
+    console.log( getYodaWithClass )
+    
+    // Yoda with attribute selectors
+    const getYodaWithAttribute = getCharactersFromStartWarsListWithID.querySelector( '[data-type=master]' )
+    console.log( getYodaWithAttribute )
+    
+    // Darth Vader with class selectors
+    const getDarthVaderWithClass = getCharactersFromStartWarsListWithID.querySelector( '.badboy' )
+    console.log( getDarthVaderWithClass )
+    
+    // Darth Vader with attribute selectors
+    const getDarthVaderWithAttribute = getCharactersFromStartWarsListWithID.querySelector( '[data-type=villain]' )
+    console.log( getDarthVaderWithAttribute )
+                        </pre>
+                    </p>
+                    <p><strong>NOTE:</strong> Notice how you can’t select Yoda and Darth Vader with tags when you use querySelector.</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="js/query-selector.js"></script>
+    </body>
+
+</html>
