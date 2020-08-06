@@ -1,6 +1,6 @@
 // Changing Classes with JS
 
-// add a single class (NOTE: using bootstrap css classes)
+// add a multiple classes (NOTE: using bootstrap css classes)
 const p0 = document.querySelector( '.add-multiple-classes' )
 p0.classList.add( 'spinner-border', 'spinner-border-sm', 'text-danger' )
 
