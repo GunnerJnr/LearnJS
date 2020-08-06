@@ -82,13 +82,20 @@ if ( doIHaveABlueClass2.classList.contains( 'text-primary' ) )
     console.log( 'Sorry you do not have a blue class' )
 }
 
-// Do I have a "red" class?If yes, remove it.If no, add it.
+// Do I have a "red" class? If yes, remove it. If no, add it.
 const toggleRedClass = document.querySelector( '.toggle' )
 // if class exists remove it, else add it
 if ( toggleRedClass.classList.contains( 'text-danger' ) )
 {
-    toggleRedClass.classList.remove( 'text-danger' )
+    //toggleRedClass.classList.remove( 'text-danger' )
+    // use the built in toggle method
+    toggleRedClass.classList.toggle( 'text-danger' )
 } else
 {
-    toggleRedClass.classList.add( 'text-danger' )
+    //toggleRedClass.classList.add( 'text-danger' )
+    // use the built in toggle method
+    toggleRedClass.classList.toggle( 'text-danger' )
 }
+
+// use the built in toggle method
+//toggleRedClass.classList.toggle('text-danger')
