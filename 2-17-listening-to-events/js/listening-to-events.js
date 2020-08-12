@@ -46,7 +46,7 @@ const button3 = document.querySelector( '.button3' )
 const text = document.querySelector( '.toggle' )
 
 // add classes to button for styling (bootstrap 4)
-button3.classList.add( 'btn', 'text-uppercase', 'border' )
+button3.classList.add( 'btn', 'text-uppercase', 'mx-auto', 'd-block', 'border' )
 // set default message for p tag
 text.innerHTML = 'I will change to orange when you '
 
@@ -108,8 +108,8 @@ freeSpaceBar.innerHTML = `${ freeSpaceBar.style.width }`
 // add multiple classes to our elements
 safeBar.classList.add( 'progress-bar', 'bg-success', 'progress-bar-striped', 'progress-bar-animated', 'border' )
 freeSpaceBar.classList.add( 'progress-bar', 'bg-light', 'progress-bar-striped', 'progress-bar-animated', 'border' )
-extendButton.classList.add( 'btn', 'btn-success', 'text-uppercase', 'border' )
-freeSpaceButton.classList.add( 'btn', 'btn-danger', 'text-uppercase', 'border' )
+extendButton.classList.add( 'btn', 'btn-success', 'mx-auto', 'd-block', 'text-uppercase', 'border' )
+freeSpaceButton.classList.add( 'btn', 'btn-danger', 'mx-auto', 'd-block', 'text-uppercase', 'border' )
 
 // add an event listerner for a 'click' event
 extendButton.addEventListener( 'click', function ()
