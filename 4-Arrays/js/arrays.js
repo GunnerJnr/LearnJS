@@ -9,28 +9,66 @@ let people = [
 ]
 
 console.log( people )
+
+console.log( '--------------------------------------------------' )
+
 console.log( people[ 0 ], people[ 1 ], people[ 2 ], people[ 3 ], people[ 4 ], people[ 5 ] )
+
+console.log( '--------------------------------------------------' )
+
 console.log( people.indexOf( 'Celia-rose' ) )
+
+console.log( '--------------------------------------------------' )
+
 people.unshift( 'Andrew', 'Gunner' )
 console.log( people )
+
+console.log( '--------------------------------------------------' )
+
 people.splice( 0, 0, 'Antony', 'Thomas' )
 console.log( people )
+
+console.log( '--------------------------------------------------' )
+
 people.push( 'Phillip', 'Greg' )
 console.log( people )
+
+console.log( '--------------------------------------------------' )
+
 people.splice( people.length, 0, 'George', 'Adam' )
 console.log( people )
+
+console.log( '--------------------------------------------------' )
+
 people.splice( 5, 0, 'Ray', 'Penelope' )
 console.log( people )
+
+console.log( '--------------------------------------------------' )
+
 people.shift()
 console.log( people )
+
+console.log( '--------------------------------------------------' )
+
 people.splice( 4, 2 )
 console.log( people )
+
+console.log( '--------------------------------------------------' )
+
 people.pop()
 console.log( people )
+
+console.log( '--------------------------------------------------' )
+
 people.splice( 8, 2 )
 console.log( people )
+
+console.log( '--------------------------------------------------' )
+
 people.splice( 8, 2 )
 console.log( people )
+
+console.log( '--------------------------------------------------' )
 
 // 4.3 For Loops
 
