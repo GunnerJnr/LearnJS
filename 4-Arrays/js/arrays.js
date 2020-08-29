@@ -98,3 +98,76 @@ for ( anotherNewNum of anotherNewNumbersArray )
 }
 
 console.log( '--------------------------------------------------' )
+
+// 4.4 ForEach Loops
+
+// Practice using forEach through an array of people (given below).
+const people84 = [
+    { firstName: 'Benjamin', lastName: 'Franklin', yearOfDeath: 1790 },
+    { firstName: 'Thomas', lastName: 'Edison', yearOfDeath: 1931 },
+    { firstName: 'Franklin', lastName: 'Roosevelt', yearOfDeath: 1945 },
+    { firstName: 'Napolean', lastName: 'Bonaparte', yearOfDeath: 1821 },
+    { firstName: 'Abraham', lastName: 'Lincoln', yearOfDeath: 1865 },
+    { firstName: 'Mother', lastName: 'Theresa', yearOfDeath: 1962 },
+    { firstName: 'Mahatma', lastName: 'Gandhi', yearOfDeath: 1948 },
+    { firstName: 'Winston', lastName: 'Churchill', yearOfDeath: 1965 },
+    { firstName: 'Charles', lastName: 'Darwin', yearOfDeath: 1882 },
+    { firstName: 'Albert', lastName: 'Einstein', yearOfDeath: 1955 },
+    { firstName: 'Pablo', lastName: 'Picasso', yearOfDeath: 1973 },
+    { firstName: 'Ludwig', lastName: 'Beethoven', yearOfDeath: 1827 },
+    { firstName: 'Walt', lastName: 'Disney', yearOfDeath: 1966 },
+    { firstName: 'Henry', lastName: 'Ford', yearOfDeath: 1947 },
+    { firstName: 'Steve', lastName: 'Jobs', yearOfDeath: 2012 }
+]
+
+// console.log the first name of each person in the array.
+people84.forEach( thePeople =>
+{
+    console.log( thePeople.firstName )
+} )
+
+console.log( '--------------------------------------------------' )
+
+// Make a second array that contains only the first name of each person.
+const firstNames = []
+people84.forEach( thePeople =>
+{
+    firstNames.push( thePeople.firstName )
+} )
+
+firstNames.forEach( thePeople2 =>
+{
+    console.log( thePeople2 )
+} )
+
+console.log( '--------------------------------------------------' )
+
+// Make a third array that contains people that have died after 1950.
+const diedafter1950 = []
+people84.forEach( thePeople =>
+{
+    if ( thePeople.yearOfDeath > 1950 )
+    {
+        diedafter1950.push( thePeople )
+    }
+} )
+
+diedafter1950.forEach( thePeople3 =>
+{
+    console.log( thePeople3.firstName )
+} )
+
+console.log( '--------------------------------------------------' )
+
+// Find index of Charles Darwin in the array.
+let darwinsIndexNo = -1
+people84.forEach( ( thePeople, indexNo ) =>
+{
+    if ( thePeople.firstName === 'Charles' && thePeople.lastName === 'Darwin' )
+    {
+        darwinsIndexNo = indexNo
+        console.log( darwinsIndexNo )
+    }
+} )
+
+console.log( '--------------------------------------------------' )
