@@ -1,0 +1,63 @@
+.row {
+    margin: 10px;
+}
+
+/* animation 1 */
+
+.explosion {
+  width: 100px;
+  height: 100px;
+  background: url("../img/Dyno_strip12.png") left center;
+  animation: explode 0.8s steps(12) infinite;
+}
+
+@keyframes explode {
+  100% {
+    background-position: -1200px;
+  }
+}
+
+/* animation 2 */
+
+.shmup-bg {
+    margin-left: 10px;
+    width: 100px;
+    height: 100px;
+    background: url('../img/space-background-4.png') center;
+}
+
+.shmup-hero-ship-02 {
+    margin: 35% 35%;
+    width: 36px;
+    height: 55px;
+    background: url("../img/shmup_hero_ship_02.png");
+    animation: fly 0.75s steps(11) infinite;
+}
+
+@keyframes fly {
+  100% {
+    background-position: -396px;
+  }
+}
+
+/* animation 3 */
+.mountain-hero-bg {
+    margin-left: 10px;
+    width: 640px;
+    height: 480px;
+    background: url('../img/mountain-backdrop.png') center;
+}
+
+.mountain-hero {
+    margin: 20% 35%;
+    width: 120px;
+    height: 204px;
+    background: url("../img/hero-jump.png");
+    animation: hero-run 0.6s steps(3) infinite;
+}
+
+@keyframes hero-run {
+  100% {
+    background-position: -360px;
+  }
+}
