@@ -5,15 +5,15 @@
 /* animation 1 */
 
 .explosion {
-  width: 100px;
-  height: 100px;
-  background: url("../img/Dyno_strip12.png") left center;
-  animation: explode 0.8s steps(12) infinite;
+  width: 100px; /* set the width of each sprite image in the strip */
+  height: 100px; /* set the height of each sprite image in the strip */
+  background: url("../img/Dyno_strip12.png") left center; /* select the sprite strip image */
+  animation: explode 0.8s steps(12) infinite; /* here we want to play our animation (name of anim, speed of playback, how many images in our strip, loop ininfitely */
 }
 
 @keyframes explode {
   100% {
-    background-position: -1200px;
+    background-position: -1200px; /* we want our animation to play through all images in the strip then loop, set it (minus) the image size */
   }
 }
 
