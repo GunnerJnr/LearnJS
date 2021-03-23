@@ -42,16 +42,16 @@ else if ( me === kenneth )
 }
 
 // Answer the rest of the questions below with reference to the following code:
-const someValue = ['one', 'two', 'three'] // adjust with each value to find out YES or NO
+const someValue = [ 'one', 'two', 'three' ] // adjust with each value to find out YES or NO
 
 if ( someValue )
 {
     // Executes if true
-    console.log('YES')
+    console.log( 'YES' )
 } else
 {
     // Executes if false
-    console.log('NO')
+    console.log( 'NO' )
 }
 
 /*
